@@ -4,3 +4,4 @@ class Employee:
     
     def add_employee(self,name,department,salary):
         self.employee[name]={"department":department,"salary":salary}
+        print(f"Employee Created with {department} and salary {salary}")
