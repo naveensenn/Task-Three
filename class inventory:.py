@@ -36,5 +36,7 @@ shop.addInventory("Shoes",100,1000)
 
 shop.updateQuantity("Shoes",900)
 
+shop.addInventory("Food","200","400")
+
 
 shop.showInventory()
