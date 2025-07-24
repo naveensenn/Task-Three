@@ -74,8 +74,88 @@
 
 
 
-with open("hello.py","r") as file:
+# with open("hello.py","a") as file:
 
-    data=file.read()
-print(data)
+#     data=file.write("\nHii I am New Developer")
+# print(data)
+
+
+
+# with open("new.py","w") as file:
+#     data=file.write("Hii Welcome to python")
+# print("File created successfully!")
+
+
+# import csv
+
+# with open("test.csv",mode="r") as file:
+#     data=csv.reader(file)
     
+#     for line in data:
+#         print(line)
+
+
+# f = ['Name', 'Branch', 'Year', 'CGPA']
+# r = [
+#     ['Nikhil', 'COE', '2', '9.0'],
+#     ['Sanchit', 'COE', '2', '9.1'],
+#     ['Aditya', 'IT', '2', '9.3'],
+#     ['Sagar', 'SE', '1', '9.5'],
+#     ['Prateek', 'MCE', '3', '7.8'],
+#     ['Sahil', 'EP', '2', '9.1']
+# ]
+
+# with open("test.csv",'a',newline='') as file:
+#     csvfile = csv.writer(file)
+    
+    
+#     csvfile.writerow(f)
+#     csvfile.writerows(r)
+    
+# print("file created successfully!")
+
+
+
+
+# d = [
+#     {'name': 'Nikhil', 'branch': 'COE', 'year': '2', 'cgpa': '9.0'},
+#     {'name': 'Sanchit', 'branch': 'COE', 'year': '2', 'cgpa': '9.1'},
+#     {'name': 'Aditya', 'branch': 'IT', 'year': '2', 'cgpa': '9.3'},
+#     {'name': 'Sagar', 'branch': 'SE', 'year': '1', 'cgpa': '9.5'},
+#     {'name': 'Prateek', 'branch': 'MCE', 'year': '3', 'cgpa': '7.8'},
+#     {'name': 'Sahil', 'branch': 'EP', 'year': '2', 'cgpa': '9.1'}
+# ]
+
+# f = ['Name', 'Branch', 'Year', 'CGPA']
+
+
+# with open("new.py","a",newline="") as file:
+#     csvWriter=csv.DictWriter(file,fieldnames=f)
+    
+#     csvWriter.writeheader()
+    
+#     csvWriter.writerows(d)
+    
+# print("File Created Successfully!")
+    
+    
+import json
+
+# data = {
+#     "name": "Alice",
+#     "age": 30,
+#     "occupation": "Engineer"
+# }
+
+# file=open("data.json","w")   
+# json.dump(data,file,indent=4)
+
+# print("File Created Successfully!")
+# file.close()
+
+
+file = open("data.json","r")
+data=json.load(file)
+
+print(data['name'])
+print(data)
