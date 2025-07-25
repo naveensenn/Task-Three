@@ -154,8 +154,9 @@ import json
 # file.close()
 
 
-file = open("data.json","r")
-data=json.load(file)
+# file = open("data.json","r")
+# data=json.load(file)
 
-print(data['name'])
-print(data)
+# print(data['name'])
+# print(data)
+

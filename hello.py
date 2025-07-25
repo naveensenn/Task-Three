@@ -6,8 +6,8 @@ def sum(lst):
     return total
 
 print(sum([1,2,3,4,5]))
-Hii I am New Developer Sorry
-Hii I am New Developer
-Hii I am New Developer
-Hii I am New Developer
-Hii I am New Developer
+# Hii I am New Developer Sorry
+# Hii I am New Developer
+# Hii I am New Developer
+# Hii I am New Developer
+# Hii I am New Developer
