@@ -31,8 +31,7 @@ def generate_report(errors):
     return report
 
 
-
-if __name__ == "__main__":
+def run():
     log_file = read_file("log.txt")
     error_patterns = ["error", "critical", "failure", "exception", "denied","warning"]
     if log_file:
@@ -40,4 +39,7 @@ if __name__ == "__main__":
         report = generate_report(error)
         print(report)
 print("-------------end of report---------------")
+
+
+run()
         
